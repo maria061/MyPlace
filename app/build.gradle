@@ -1,0 +1,121 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.ar.sceneform.plugin'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.example.secondar"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation "com.google.ar.sceneform.ux:sceneform-ux:1.10.0"
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.google.firebase:firebase-database:19.3.1'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+}
+
+
+sceneform.asset('sampleData/model.obj',
+        'default',
+        'sampleData/model.sfa',
+        'src/main/assets/model')
+
+sceneform.asset('sampleData/table.obj',
+        'default',
+        'sampleData/table.sfa',
+        'src/main/assets/table')
+
+sceneform.asset('sampleData/chair.obj',
+        'default',
+        'sampleData/chair.sfa',
+        'src/main/assets/chair')
+
+sceneform.asset('sampleData/lamp.obj',
+        'default',
+        'sampleData/lamp.sfa',
+        'src/main/assets/lamp')
+
+sceneform.asset('sampleData/tv.obj',
+        'default',
+        'sampleData/tv.sfa',
+        'src/main/assets/tv')
+
+sceneform.asset('sampleData/cloth.obj',
+        'default',
+        'sampleData/cloth.sfa',
+        'src/main/assets/cloth')
+
+sceneform.asset('sampleData/room.obj',
+        'default',
+        'sampleData/room.sfa',
+        'src/main/assets/room')
+
+
+sceneform.asset('sampleData/Drawer.obj',
+        'default',
+        'sampleData/Drawer.sfa',
+        'src/main/assets/Drawer')
+
+sceneform.asset('sampleData/sofa1.obj',
+        'default',
+        'sampleData/sofa1.sfa',
+        'src/main/assets/sofa1')
+
+sceneform.asset('sampleData/desk.obj',
+        'default',
+        'sampleData/desk.sfa',
+        'src/main/assets/desk')
+
+sceneform.asset('sampleData/bed.obj',
+        'default',
+        'sampleData/bed.sfa',
+        'src/main/assets/bed')
+
+sceneform.asset('sampleData/bench.obj',
+        'default',
+        'sampleData/bench.sfa',
+        'src/main/assets/bench')
+
+sceneform.asset('sampleData/table_rondi.obj',
+        'default',
+        'sampleData/table_rondi.sfa',
+        'src/main/assets/table_rondi')
+
+sceneform.asset('sampleData/coffeeTable.obj',
+        'default',
+        'sampleData/coffeeTable.sfa',
+        'src/main/assets/coffeeTable')
+
+sceneform.asset('sampleData/CandleStick.obj',
+        'default',
+        'sampleData/CandleStick.sfa',
+        'src/main/assets/CandleStick')

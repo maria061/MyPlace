@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_my_place"
+    android:orientation="vertical"
+    tools:context=".MainMenuActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:contentDescription="@string/describeImgLogo"
+        android:src="@drawable/logo_my_place" />
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@color/colorCream"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@color/colorViolet1"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05" />
+
+            <TextView
+                android:id="@+id/tv_mainmenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:paddingTop="10dp"
+                android:text="@string/main_menu"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_mainmenu_dec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="45dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="0.1"
+                android:backgroundTint="@color/colorCream"
+                android:onClick="goToDecorate"
+                android:text="@string/Decorate"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.06" />
+
+            <Button
+                android:id="@+id/btn_mainmenu_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.1"
+                android:backgroundTint="@color/colorCream"
+                android:onClick="goToOhtersCreations"
+                android:text="@string/OthersCrations"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.06" />
+
+            <Button
+                android:id="@+id/btn_mainmenu_mylib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.1"
+                android:backgroundTint="@color/colorCream"
+                android:onClick="goToCatalogue"
+                android:text="@string/Catalogue"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05" />
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07" />
+
+            <Button
+
+                android:id="@+id/btn_mainmenu_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="45dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorWhite"
+                android:text="@string/Logout"
+                android:textColor="@color/colorCream"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

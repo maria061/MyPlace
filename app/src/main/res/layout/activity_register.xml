@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_my_place"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="10dp"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageViewReg"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:contentDescription="@string/describeImgLogo"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_my_place" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        app:layout_constraintStart_toEndOf="@id/imageViewReg"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:background="@color/colorViolet1"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+
+        <TextView
+            android:id="@+id/reg_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/reg_creatAcc"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ET_reg_email"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.232"
+            tools:layout_editor_absoluteX="4dp" />
+
+        <EditText
+            android:id="@+id/ET_reg_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="68dp"
+            android:hint="@string/reg_username"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/reg_textView"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <EditText
+            android:id="@+id/ET_reg_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:hint="@string/prompt_email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/ET_reg_username"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <EditText
+            android:id="@+id/ET_reg_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:hint="@string/prompt_password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/ET_reg_email"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <EditText
+            android:id="@+id/ET_reg_passwordRepeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:hint="@string/repeatPass"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/ET_reg_password"
+            tools:layout_editor_absoluteX="4dp" />
+
+
+        <Button
+            android:id="@+id/Btn_reg_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@color/colorCream"
+            android:onClick="register"
+            android:paddingHorizontal="20dp"
+            android:text="@string/reg_RegisterBtn"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ET_reg_passwordRepeat"
+            app:layout_constraintVertical_bias="0.463" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
